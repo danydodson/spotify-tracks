@@ -1,0 +1,61 @@
+{
+  "name": "spotify-profile",
+  "version": "0.1.0",
+  "description": "Spotify Profile",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bchiang7/spotify-profile.git"
+  },
+  "keywords": [],
+  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bchiang7/spotify-profile/issues"
+  },
+  "homepage": "https://github.com/bchiang7/spotify-profile#readme",
+  "engines": {
+    "node": "10.13.0"
+  },
+  "scripts": {
+    "client:install": "cd client && yarn",
+    "client": "cd client && yarn start",
+    "server": "node server",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server",
+    "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^1.6.0",
+    "cookie-parser": "1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "~4.17.1",
+    "querystring": "~0.2.0",
+    "request": "~2.88.0"
+  },
+  "devDependencies": {
+    "@upstatement/eslint-config": "^0.4.3",
+    "@upstatement/prettier-config": "^0.3.0",
+    "concurrently": "^5.1.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2"
+  }
+}
