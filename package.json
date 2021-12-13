@@ -5,15 +5,15 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/spotify-profile.git"
+    "url": "https://github.com/danydodson/danys-spotify-profile.git"
   },
   "keywords": [],
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Dany Dodson <danydodson@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bchiang7/spotify-profile/issues"
+    "url": "https://github.com/danydodson/danys-spotify-profile/issues"
   },
-  "homepage": "https://github.com/bchiang7/spotify-profile#readme",
+  "homepage": "https://github.com/danydodson/danys-spotify-profile#readme",
   "engines": {
     "node": "10.13.0"
   },
