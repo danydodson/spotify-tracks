@@ -1,4 +1,4 @@
-# Spotify Profile
+# Spotify Tracks
 
 > A web app for visualizing personalized Spotify data
 

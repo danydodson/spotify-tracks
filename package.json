@@ -1,22 +1,8 @@
 {
-  "name": "spotify-profile",
+  "name": "spotify-tracks",
   "version": "0.1.0",
-  "description": "Spotify Profile",
+  "description": "Spotify Tracks",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danydodson/danys-spotify-profile.git"
-  },
-  "keywords": [],
-  "author": "Dany Dodson <danydodson@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/danydodson/danys-spotify-profile/issues"
-  },
-  "homepage": "https://github.com/danydodson/danys-spotify-profile#readme",
-  "engines": {
-    "node": "10.13.0"
-  },
   "scripts": {
     "client:install": "cd client && yarn",
     "client": "cd client && yarn start",
@@ -24,6 +10,9 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server",
     "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
+  },
+  "engines": {
+    "node": "10.13.0"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -57,5 +46,16 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
     "prettier": "^2.0.2"
-  }
+  },
+  "author": "Dany Dodson <danydodson@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danydodson/spotify-tracks.git"
+  },
+  "homepage": "https://github.com/danydodson/spotify-tracks#readme",
+  "bugs": {
+    "url": "https://github.com/danydodson/spotify-tracks/issues"
+  },
+  "keywords": []
 }

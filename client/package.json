@@ -1,16 +1,17 @@
 {
-  "name": "spotify-profile",
+  "name": "spotify-tracks",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8888",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "engines": {
     "node": "10.13.0"
   },
@@ -18,14 +19,6 @@
     "styledComponents": {
       "pure": true
     }
-  },
-  "homepage": "https://danys-spotify-profile.herokuapp.com",
-  "proxy": "http://localhost:8888",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -59,5 +52,21 @@
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.5",
     "lint-staged": "^9.2.5"
-  }
+  },
+  "author": "Dany Dodson <danydodson@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danydodson/spotify-tracks.git"
+  },
+  "homepage": "https://github.com/danydodson/spotify-tracks#readme",
+  "bugs": {
+    "url": "https://github.com/danydodson/spotify-tracks/issues"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

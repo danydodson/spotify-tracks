@@ -6,7 +6,7 @@ const { colors, fontSizes } = theme;
 const LOGIN_URI =
   process.env.NODE_ENV !== 'production'
     ? 'http://localhost:8888/login'
-    : 'https://spotify-profile.herokuapp.com/login';
+    : 'https://spotify-tracks.herokuapp.com/login';
 
 const Login = styled(Main)`
   ${mixins.flexCenter};
@@ -36,7 +36,7 @@ const LoginButton = styled.a`
 
 const LoginScreen = () => (
   <Login>
-    <h1>Spotify Profile</h1>
+    <h1>Spotify Tracks</h1>
     <LoginButton href={LOGIN_URI}>Log in to Spotify</LoginButton>
   </Login>
 );
