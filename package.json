@@ -14,19 +14,6 @@
     "start": "node server",
     "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
   },
-  "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write"
-    ],
-    "*.{js}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "connect-history-api-fallback": "^1.6.0",
     "cookie-parser": "1.4.4",
@@ -46,6 +33,19 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
     "prettier": "^2.0.2"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "author": "Dany Dodson <danydodson@gmail.com>",
   "license": "ISC",
