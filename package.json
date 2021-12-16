@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Spotify Tracks",
   "main": "index.js",
+  "engines": {
+    "node": "10.13.0"
+  },
   "scripts": {
     "client:install": "cd client && yarn",
     "client": "cd client && yarn start",
@@ -10,9 +13,6 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server",
     "heroku-postbuild": "cd client/ && yarn && yarn install --production && yarn build"
-  },
-  "engines": {
-    "node": "10.13.0"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
